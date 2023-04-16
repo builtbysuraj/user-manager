@@ -9,12 +9,10 @@ export default function App() {
   const [userData, setUserData] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 
-  const API_URL = `https://jsonplaceholder.typicode.com/users/`;
-
   // fetching user data from api
   const fetchData = async () => {
     try {
-      const responce = await fetch(API_URL);
+      const responce = await fetch(`${import.meta.env.VITE_API_URL}`);
       if (!responce.ok) throw new Error(`Responce isnt OK`);
       const data = await responce.json();
       setUserData(data);
