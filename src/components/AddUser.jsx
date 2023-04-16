@@ -1,7 +1,7 @@
 import { Formik, Field, Form } from "formik";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Input, InputWrapper } from "../styles/Input.style";
+import { Button, Input, InputWrapper } from "../styles/Input.style";
 
 export default function AddUser({ onAdd }) {
   // handle form submit using Formik
@@ -37,7 +37,7 @@ export default function AddUser({ onAdd }) {
           <Field name="name" placeholder="Name" type="text" as={Input} />
           <Field name="phone" placeholder="Phone" type="number" as={Input} />
           <Field name="email" placeholder="Email" type="email" as={Input} />
-          <button type="submit">Submit</button>
+          <Button type="submit">Submit</Button>
         </Form>
       </Formik>
     </InputWrapper>
