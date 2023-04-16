@@ -24,7 +24,6 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
-
 }
 .Toastify__toast-body {
     font-size: 15px;

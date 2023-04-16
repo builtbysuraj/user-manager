@@ -2,7 +2,7 @@ import User from "./User";
 
 export default function UserList({ userData }) {
   return (
-    <div>
+    <>
       {userData.map((user) => (
         <User 
         key={user.id}
@@ -12,6 +12,6 @@ export default function UserList({ userData }) {
         email={user.email}
         />
       ))}
-    </div>
+    </>
   );
 }

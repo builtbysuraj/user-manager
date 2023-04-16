@@ -54,6 +54,7 @@ export default function App() {
           type="text"
           placeholder="Search"
           onChange={(e) => setSearchQuery(e.target.value)}
+          spellCheck="false"
         />
         <AddUser onAdd={handleUserAdd} />
         <UserList userData={filteredUser} />

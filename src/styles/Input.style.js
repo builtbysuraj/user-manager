@@ -18,14 +18,14 @@ export const Button = styled.button`
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: all 0.3s;
   margin-left: 2px;
   font-size: 1.5rem;
   border: none;
   background-color: white;
 
 &:hover{
-  background-color: #b91c1c;
+  background-color: #388e3c;
   color: white;
 }
 `

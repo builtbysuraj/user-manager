@@ -8,7 +8,7 @@ export default function AddUser({ onAdd }) {
   const handleSubmit = (values, { resetForm }) => {
     const { name, phone, email } = values;
     if (name === "" || email === "" || phone === "") {
-      toast.error("Invalid input❗Please fill all input(s)");
+      toast.error("Invalid input input❗");
       return;
     }
     onAdd(name, phone, email);
@@ -34,10 +34,28 @@ export default function AddUser({ onAdd }) {
         onSubmit={handleSubmit}
       >
         <Form>
-          <Field name="name" placeholder="Name" type="text" as={Input} />
-          <Field name="phone" placeholder="Phone" type="number" as={Input} />
-          <Field name="email" placeholder="Email" type="email" as={Input} />
-          <Button type="submit">Submit</Button>
+          <Field
+            name="name"
+            placeholder="Name"
+            type="text"
+            as={Input}
+            spellCheck="false"
+          />
+          <Field
+            name="phone"
+            placeholder="Phone"
+            type="number"
+            as={Input}
+            spellCheck="false"
+          />
+          <Field
+            name="email"
+            placeholder="Email"
+            type="email"
+            as={Input}
+            spellCheck="false"
+          />
+          <Button type="submit">Add User</Button>
         </Form>
       </Formik>
     </InputWrapper>
